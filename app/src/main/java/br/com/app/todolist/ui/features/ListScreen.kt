@@ -12,7 +12,6 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -25,15 +24,20 @@ import br.com.app.todolist.ui.components.ToDoItem
 import br.com.app.todolist.ui.theme.ToDoListTheme
 
 @Composable
-fun ListScreen(modifier: Modifier = Modifier) {
-
+fun ListScreen(
+    navigateToAddEditScreen: (id: Long?) -> Unit
+) {
+    ListContent(
+        todos = listOf(),
+        onAddItemClick = navigateToAddEditScreen
+    )
 }
 
 @Composable
-fun ListContent(modifier: Modifier = Modifier, todos: List<Todo>) {
+fun ListContent(modifier: Modifier = Modifier, todos: List<Todo>, onAddItemClick: (id: Long?) -> Unit) {
     Scaffold(
         floatingActionButton = {
-            FloatingActionButton(onClick = { }) {
+            FloatingActionButton(onClick = { onAddItemClick(null) }) {
                 Icon(Icons.Default.Add, contentDescription = "add")
             }
         }
@@ -62,7 +66,8 @@ fun ListContent(modifier: Modifier = Modifier, todos: List<Todo>) {
 private fun ListContentPreview() {
     ToDoListTheme {
         ListContent(
-            todos = listOf(todo1, todo2, todo3)
+            todos = listOf(todo1, todo2, todo3),
+            onAddItemClick = {}
         )
     }
 }

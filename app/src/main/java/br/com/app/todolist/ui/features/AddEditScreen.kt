@@ -24,7 +24,7 @@ import br.com.app.todolist.ui.theme.ToDoListTheme
 
 @Composable
 fun AddEditScreen(modifier: Modifier = Modifier) {
-
+    AddEditContent()
 }
 
 @Composable
