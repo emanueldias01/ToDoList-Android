@@ -19,7 +19,7 @@ Principais ferramentas e dependências usadas no projeto:
 
 ---
 
-## 🧠 Arquitetura
+## Arquitetura
 
 O projeto segue o padrão **MVVM (Model-View-ViewModel)**, garantindo:
 
@@ -28,19 +28,9 @@ O projeto segue o padrão **MVVM (Model-View-ViewModel)**, garantindo:
 * Melhor manutenção e escalabilidade
 * Estado desacoplado da UI
 
-### Estrutura geral
-
-```
-ui/            → telas e componentes Compose
-viewmodel/     → lógica de estado
-data/          → repositórios e acesso ao banco
-database/      → entidades, DAO e configuração do Room
-navigation/    → rotas e controle de navegação
-```
-
 ---
 
-## 📦 Configuração do Projeto
+## Configuração do Projeto
 
 ### Requisitos
 
@@ -61,7 +51,7 @@ Ou simplesmente execute pelo Android Studio.
 
 ---
 
-## 🗂️ Persistência de Dados
+## Persistência de Dados
 
 O app utiliza **Room** para armazenar tarefas localmente:
 
@@ -72,7 +62,7 @@ O app utiliza **Room** para armazenar tarefas localmente:
 
 ---
 
-## 🧭 Navegação
+## Navegação
 
 A navegação entre telas é feita com **Navigation Compose**, permitindo:
 
@@ -82,7 +72,7 @@ A navegação entre telas é feita com **Navigation Compose**, permitindo:
 
 ---
 
-## 🎨 Interface
+## Interface
 
 A interface é construída 100% com **Jetpack Compose + Material 3**, oferecendo:
 
@@ -93,7 +83,7 @@ A interface é construída 100% com **Jetpack Compose + Material 3**, oferecendo
 
 ---
 
-## 🚀 Objetivo do Projeto
+## Objetivo do Projeto
 
 Este projeto foi criado para:
 
