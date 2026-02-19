@@ -4,7 +4,15 @@ Aplicativo de lista de tarefas (To-Do List) desenvolvido para Android com foco e
 
 ---
 
-## ✨ Tecnologias e Bibliotecas Utilizadas
+## Telas
+
+<img width=100 src="./images/cadastro_todo.png"/>
+&nbsp;&nbsp;
+<img width=108 src="./images/todo_list.png" />
+&nbsp;&nbsp;
+
+
+## Tecnologias e Bibliotecas Utilizadas
 
 Principais ferramentas e dependências usadas no projeto:
 
